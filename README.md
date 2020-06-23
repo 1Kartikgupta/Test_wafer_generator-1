@@ -6,6 +6,7 @@
 2.	 Placement of all the Standard Cell in Die
 <img src="https://github.com/Abhiram504/Test_wafer_generator/blob/master/WhatsApp%20Image%202020-06-15%20at%208.45.23%20PM.jpeg?raw=true">
 
+<img src="https://github.com/Abhiram504/Test_wafer_generator/blob/master/WhatsApp%20Image%202020-06-15%20at%208.47.15%20PM.jpeg?raw=true">
 
 3.	Automatic test Pattern Generator: After placement and routing of all the  elements in the die we now test our wafer using a ATPG with the help of a wafer probing machine. This test pattern generator can be designed with help of perl programming.
 
