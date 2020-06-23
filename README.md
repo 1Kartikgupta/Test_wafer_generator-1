@@ -11,4 +11,8 @@ This is a an automatic test pattern generator for stuck at faults in combination
 
 We have requested them to make this tool open-source so that everyone can work on it and build a more better environment
 
+Before this to check the golden Response of the circuit we have to check with the help og truth table
 
+```
+pip install truth-table-generator
+```
