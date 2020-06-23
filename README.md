@@ -11,8 +11,16 @@ This is a an automatic test pattern generator for stuck at faults in combination
 
 We have requested them to make this tool open-source so that everyone can work on it and build a more better environment
 
-Before this to check the golden Response of the circuit we have to check with the help og truth table
+Before this to check the golden Response of the circuit we have to check with the help of truth table
 
+Truth Table generator
+
+truth-table-generator is a tool that allows to generate a truth table. It is a fork of truths by tr3buchet.
+
+Steps for installing truth table using python
 ```
 pip install truth-table-generator
 ```
+Usage
+
+First, let's import the package. ```ttg``` stands for truth-table-generator
