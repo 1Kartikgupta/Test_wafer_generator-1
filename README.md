@@ -13,14 +13,63 @@ We have requested them to make this tool open-source so that everyone can work o
 
 Before this to check the golden Response of the circuit we have to check with the help of truth table
 
-Truth Table generator
+# Truth Table generator
 
 truth-table-generator is a tool that allows to generate a truth table. It is a fork of truths by tr3buchet.
 
-Steps for installing truth table using python
+# Steps for installing truth table using python
 ```
 pip install truth-table-generator
 ```
-Usage
+# Usage
 
 First, let's import the package. ```ttg``` stands for truth-table-generator
+```
+import ttg 
+```
+A truth table has one column for each input variable (for example, p and q), and one final column showing all of the possible results of the logical operation that the table represents. If the input has only one list of strings, each string is considered an input variable:
+```
+print(ttg.Truths(['p', 'q', 'r']))
+```
+```
++-----+-----+-----+
+|  p  |  q  |  r  |
+|-----+-----+-----|
+|  1  |  1  |  1  |
+|  1  |  1  |  0  |
+|  1  |  0  |  1  |
+|  1  |  0  |  0  |
+|  0  |  1  |  1  |
+|  0  |  1  |  0  |
+|  0  |  0  |  1  |
+|  0  |  0  |  0  |
++-----+-----+-----+
+```
+A second list of strings can be passed with propositional expressions created with logical operators.
+```
+print(ttg.Truths(['p', 'q', 'r'], ['p and q and r', 'p or q or r', '(p or (~q)) => r']))
+```
+```
++-----+-----+-----+-----------------+---------------+--------------------+
+|  p  |  q  |  r  |  p and q and r  |  p or q or r  |  (p or (~q)) => r  |
+|-----+-----+-----+-----------------+---------------+--------------------|
+|  1  |  1  |  1  |        1        |       1       |         1          |
+|  1  |  1  |  0  |        0        |       1       |         0          |
+|  1  |  0  |  1  |        0        |       1       |         1          |
+|  1  |  0  |  0  |        0        |       1       |         0          |
+|  0  |  1  |  1  |        0        |       1       |         1          |
+|  0  |  1  |  0  |        0        |       1       |         1          |
+|  0  |  0  |  1  |        0        |       1       |         1          |
+|  0  |  0  |  0  |        0        |       0       |         0          |
+```
+Operators and their representations:
+negation: ```'not'```,``` '-'```, ```'~'```
+logical disjunction: ```'or'```
+logical nor: ```'nor'```
+exclusive disjunction: ```'xor'```, ```'!='```
+logical conjunction: ```'and'```
+logical NAND: ```'nand'```
+material implication: ```'=>'```, ```'implies'```
+logical biconditional: ```'='```
+Note: Use parentheses! Especially with the negation operator. Use tables above and below as reference. Although precedence rules are used, sometimes precedence between conjunction and disjunction is unspecified requiring to provide it explicitly in given formula with parentheses.
+
