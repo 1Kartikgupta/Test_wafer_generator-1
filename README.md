@@ -6,4 +6,9 @@
 
 The Atpg tool is an electronic design automation method/technology which is used to find an input or test sequence that when applied to a wafer containing a digital circuit, enables ATE to distinguish between the correct circuit behavior and the errors caused by the defects present in wafer. This used for failure analysis which is used to test semiconductor devices after manufacture or to assist with determining the cause of failure. By the number of modeled defects or fault models which is detectable by the number of generated pattern the effectiveness of ATPG can be measured 
 
-The Atpg tool which will help to detect the errors in the circuit is known as Atlanta version 2.0. For further details you can visit the github repository :
+The Atpg tool which will help to detect the errors in the circuit is known as Atlanta version 2.0. For further details you can visit the github repository : https://github.com/hsluoyz/Atalanta
+This is a an automatic test pattern generator for stuck at faults in combinational circuit developed bythe Bradley Department of Electrical and Computer Enginnering, Virginia Polythechnic Institute & State University. 
+
+We have requested them to make this tool open-source so that everyone can work on it and build a more better environment
+
+
