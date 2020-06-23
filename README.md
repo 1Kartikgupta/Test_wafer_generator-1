@@ -17,7 +17,74 @@ This is a an automatic test pattern generator for stuck at faults in combination
 
 We have requested them to make this tool open-source so that everyone can work on it and build a more better environment
 
-Before this to check the golden Response of the circuit we have to check with the help of truth table
+# Let's Start
+.Installing Python3, Ngspice, Z3 Solver
+.Creating a python virtual environment
+.Installing librecell using git
+.Applying Conversion Commands
+.Installing MAGIC To see Layout
+
+# Downloading Python3, Ngspice, Z3 Solver
+For Ubuntu using terminal window we will download the required tools 
+
+To install python 3 the command is 
+```
+sudo apt-get install python3
+```
+Commands to install Ngspice and Z3
+```
+sudo pacman -S install ngspice z3
+```
+We will require MAGIC software to read the ```.mag``` files
+```
+sudo apt-get install magic
+```
+To check whether all the tools are installed : try for checkpoints
+Checkpoint 1: type ```python3```for python, enter command ```z3--help``` for z3 solver Give command ```ngspice``` for ngspice
+
+Now we need to work on thr python working environment
+use the foloowing commands for setting up your python virtual environment
+```
+python3 -m venv my-librecell-env
+source ./my-librecell-env/bin/activate
+```
+# Installing Librecell
+WE will install libre cell from git so use the following command to download and install
+```
+git clone https://codeberg.org/tok/librecell.git
+cd librecell
+```
+```
+cd librecell-common
+python3 setup.py develop
+cd ..
+```
+```
+cd librecell-layout
+python3 setup.py develop
+cd ..
+```
+```
+cd librecell-lib
+python3 setup.py develop
+cd ..
+```
+To make sure that the libre cell is installed properly typre the foloowing command
+```
+librecell --h
+```
+If terminal is showing information or help commands then librecell is installed.
+
+Next we need to deal with actual files that is spice netlist files, tech files, directories,etc. We need to make directory in lbrecell layout folder. Make sure that you are in librecell folder right now [From librecell folder we will go to librecell-layout]
+```
+cd librecell-layout
+```
+So make a directory
+```
+mkdir /tmp/mylibrary
+```
+
+After this to check the golden Response of the circuit we have to check with the help of truth table
 
 # Truth Table generator
 
