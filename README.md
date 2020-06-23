@@ -146,3 +146,10 @@ material implication: ```'=>'```, ```'implies'```
 logical biconditional: ```'='```
 Note: Use parentheses! Especially with the negation operator. Use tables above and below as reference. Although precedence rules are used, sometimes precedence between conjunction and disjunction is unspecified requiring to provide it explicitly in given formula with parentheses.
 
+# Contact information
+Abhiram Pillai, B.E [Electronics and Telecommunication Engineering], Don Bosco Institute of Technology, Mumbai.
+abhirampillai504pk@gmail.com
+Philipp Ghuring, Software Architect at Libresilicon Assosiation. pg@futureware.at
+Kunal Ghosh, Director, VSD Corp.Pvt.ltd. kunalghosh@gmail.com
+Dr. Gaurav Trivedi, Co-principal & Associative Professor, EEE Department, IIT Guwahati. trivedi@iitg.ac.in
+
