@@ -18,11 +18,11 @@ This is a an automatic test pattern generator for stuck at faults in combination
 We have requested them to make this tool open-source so that everyone can work on it and build a more better environment
 
 # Let's Start
-.Installing Python3, Ngspice, Z3 Solver
-.Creating a python virtual environment
-.Installing librecell using git
-.Applying Conversion Commands
-.Installing MAGIC To see Layout
+*Installing Python3, Ngspice, Z3 Solver
+*Creating a python virtual environment
+*Installing librecell using git
+*Applying Conversion Commands
+*Installing MAGIC To see Layout
 
 # Downloading Python3, Ngspice, Z3 Solver
 For Ubuntu using terminal window we will download the required tools 
@@ -135,21 +135,21 @@ print(ttg.Truths(['p', 'q', 'r'], ['p and q and r', 'p or q or r', '(p or (~q)) 
 |  0  |  0  |  1  |        0        |       1       |         1          |
 |  0  |  0  |  0  |        0        |       0       |         0          |
 ```
-.Operators and their representations:
-.negation: ```'not'```,``` '-'```, ```'~'```
-.logical disjunction: ```'or'```
-.logical nor: ```'nor'```
-.exclusive disjunction: ```'xor'```, ```'!='```
-.logical conjunction: ```'and'```
-.logical NAND: ```'nand'```
-.material implication: ```'=>'```, ```'implies'```
-.logical biconditional: ```'='```
-.Note: Use parentheses! Especially with the negation operator. Use tables above and below as reference. Although precedence rules are used, sometimes precedence between conjunction and disjunction is unspecified requiring to provide it explicitly in given formula with parentheses.
+*Operators and their representations:
+*negation: ```'not'```,``` '-'```, ```'~'```
+*logical disjunction: ```'or'```
+*logical nor: ```'nor'```
+*exclusive disjunction: ```'xor'```, ```'!='```
+*logical conjunction: ```'and'```
+*logical NAND: ```'nand'```
+*material implication: ```'=>'```, ```'implies'```
+*logical biconditional: ```'='```
+*Note: Use parentheses! Especially with the negation operator. Use tables above and below as reference. Although precedence rules are used, sometimes precedence between conjunction and disjunction is unspecified requiring to provide it explicitly in given formula with parentheses.
 
 # Contact information
-.Abhiram Pillai, B.E [Electronics and Telecommunication Engineering], Don Bosco Institute of Technology, Mumbai.
+*Abhiram Pillai, B.E [Electronics and Telecommunication Engineering], Don Bosco Institute of Technology, Mumbai.
 abhirampillai504pk@gmail.com
-.Philipp Ghuring, Software Architect at Libresilicon Assosiation. pg@futureware.at
-.Kunal Ghosh, Director, VSD Corp.Pvt.ltd. kunalghosh@gmail.com
-.Dr. Gaurav Trivedi, Co-principal & Associative Professor, EEE Department, IIT Guwahati. trivedi@iitg.ac.in
+*Philipp Ghuring, Software Architect at Libresilicon Assosiation. pg@futureware.at
+*Kunal Ghosh, Director, VSD Corp.Pvt.ltd. kunalghosh@gmail.com
+*Dr. Gaurav Trivedi, Co-principal & Associative Professor, EEE Department, IIT Guwahati. trivedi@iitg.ac.in
 
