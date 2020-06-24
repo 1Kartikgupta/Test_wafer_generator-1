@@ -77,7 +77,7 @@ cd ..
 ```
 To make sure that the libre cell is installed properly typre the foloowing command
 ```
-librecell --h
+lclayout --h
 ```
 If terminal is showing information or help commands then librecell is installed.
 
