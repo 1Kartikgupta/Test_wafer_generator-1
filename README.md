@@ -46,7 +46,12 @@ Checkpoint 1: type ```python3```for python, enter command ```z3 --help``` for z3
 Now we need to work on thr python working environment
 use the foloowing commands for setting up your python virtual environment
 ```
+sudo apt-get install python3-venv
+```
+```
 python3 -m venv my-librecell-env
+```
+```
 source ./my-librecell-env/bin/activate
 ```
 # Installing Librecell
