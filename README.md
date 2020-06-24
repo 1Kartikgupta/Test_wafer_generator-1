@@ -33,14 +33,15 @@ sudo apt-get install python3
 ```
 Commands to install Ngspice and Z3
 ```
-sudo pacman -S install ngspice z3
+sudo apt-get install ngspice 
+sudo apt-get install z3
 ```
 We will require MAGIC software to read the ```.mag``` files
 ```
 sudo apt-get install magic
 ```
 To check whether all the tools are installed : try for checkpoints
-Checkpoint 1: type ```python3```for python, enter command ```z3--help``` for z3 solver Give command ```ngspice``` for ngspice
+Checkpoint 1: type ```python3```for python, enter command ```z3 --help``` for z3 solver Give command ```ngspice``` for ngspice
 
 Now we need to work on thr python working environment
 use the foloowing commands for setting up your python virtual environment
